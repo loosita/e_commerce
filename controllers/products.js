@@ -7,7 +7,7 @@ const createProduct =async (req,res)=>{
         res.status(201).json({message:"product created successfully"})
     }
     catch(err){
-        res.status(400).json({message:"stupid bitch"})
+        res.status(500).json({message:"something went wrong"})
     }
 
 }
