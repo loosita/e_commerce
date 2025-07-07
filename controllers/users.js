@@ -8,7 +8,7 @@ const createUser =async  (req,res)=>{
         res.status(201).send(jwt);
     }
     catch(err){
-        res.status(400).json("something went wrong")
+        res.status(500).json("something went wrong")
 
     }
 }
